@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     font-size: 1rem;
 }
@@ -15,9 +15,26 @@
     "Montserrat", sans-serif;
     "Fraunces", serif;
 */
+body {
+    background-color: var(--primary-cream-200);
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1.25rem;
+    background-color: var(--neutral-white);
+    border-radius: 1rem;
+}
+
+.wrapper__text {
+    padding: 1rem;
+}
+
 img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
 }
 
 p {
